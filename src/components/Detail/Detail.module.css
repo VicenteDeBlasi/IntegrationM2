@@ -1,0 +1,133 @@
+@media screen and (min-width: 300px) and (max-width: 841px){
+
+.Container {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin-bottom: 5vh;
+		color: #E7DECC;
+	}
+
+	.VolverContainer {
+		width: 45vw;
+		margin-left: 3.3vw;
+		font-size: 3.5vmin;
+	}
+
+	.VolverLink {
+		text-decoration: none;
+		color: black;
+	}
+
+	.Volver {
+		background-color: darkslateblue;
+		border-radius: 1em;
+		transition: 0.4s ease;
+	}
+
+	.Volver:hover {
+		background-color: slateblue;
+	}
+
+	.DetailsContainer {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.DetailsIMNAContainer {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		justify-content: center;	
+	}
+
+	.DetailsImg {
+		min-width: 300px;
+		border-radius: 2em;
+	}
+
+	.nameContainer {
+		font-family: 'Quicksand', sans-serif;
+		border-radius: 2em;
+		background-color: #000049;
+		width: 100vw;
+		margin: 2vh 0px;
+	}
+
+	.DetailTextContainer {
+		font-family: 'Quicksand', sans-serif;
+		flex-grow: 1;
+		border-radius: 2em;
+		background-color: #000049;
+		width: 100vw;
+	}
+
+}
+
+@media screen and (min-width: 842px){
+
+	.Container {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin-bottom: 5vh;
+		color: #E7DECC;
+	}
+
+	.VolverContainer {
+		width: 15vw;
+		margin-left: 3.3vw;
+	}
+
+	.VolverLink {
+		text-decoration: none;
+		color: black;
+	}
+
+	.Volver {
+		background-color: darkslateblue;
+		border-radius: 1em;
+		transition: 0.4s ease;
+	}
+
+	.Volver:hover {
+		background-color: slateblue;
+	}
+
+	.DetailsContainer {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.DetailsImgContainer {
+		flex-grow: 1;
+	}
+
+	.DetailsImg {
+		min-width: 300px;
+		border-radius: 2em;
+	}
+
+	.nameContainer {
+		font-family: 'Quicksand', sans-serif;
+		border-radius: 2em;
+		background-color: #000049;
+		width: 40vw;
+	}
+
+	.DetailTextContainer {
+		font-family: 'Quicksand', sans-serif;
+		flex-grow: 1;
+		border-radius: 2em;
+		background-color: #000049;
+		width: 40vw;
+	}
+}

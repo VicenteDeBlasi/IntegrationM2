@@ -1,0 +1,155 @@
+@media screen and (min-width: 300px) {
+
+	.FutContainer {
+		display: flex;
+		flex-direction: row;
+		font-family: 'Poppins', sans-serif;
+		background-color: darkslateblue;
+		height: 15vh;
+		bottom: 0px;
+		width: 100vw;
+	}
+
+	.UList {
+		flex-grow: 2;
+		text-decoration: none;
+		font-size: 3vmin;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		padding: 0px;
+	}
+
+	.ListItem {
+		text-decoration: none;
+		list-style-type: none;
+		background-color: #000056;
+		border-radius: 1em;
+		transition: 0.2s ease;
+	}
+
+	.ListItem:hover {
+		background-color: #000080;
+	}
+
+	.LIA {
+		text-decoration: none;
+		color: black;
+	}
+
+	.LIAscan {
+		display: none;
+	}
+
+	.ImgLogoRs {
+		max-width: 7vmin;
+		margin: 2vmin;
+	}
+
+	.ImgLogoLD {
+		margin: 2vmin;
+		max-width: 7vmin;
+	}
+}
+
+@media screen and (min-width: 768px){
+
+	.FutContainer {
+		display: flex;
+		font-family: 'Poppins', sans-serif;
+		background-color: darkslateblue;
+		height: 15vh;
+		bottom: 0px;
+		width: 100%;
+	}
+
+	.UList {
+		flex-grow: 2;
+		text-decoration: none;
+		display: flex;
+		flex-direction: row;
+		font-size: 3vmin;
+		align-items: center;
+		justify-content: space-around;
+		padding: 0px;
+	}
+
+	.ListItem {
+		text-decoration: none;
+		list-style-type: none;
+		background-color: #000056;
+		border-radius: 1em;
+		transition: 0.2s ease;
+		padding: 1.5vw;
+	}
+
+	.ListItem:hover {
+		background-color: #000080;
+	}
+
+	.LIA {
+		text-decoration: none;
+		color: black;
+	}
+
+	.ImgLogoRs {
+		max-width: 6vw;
+		margin: 0px;
+	}
+
+	.ImgLogoLD {
+		max-width: 6vw;
+		margin: 0px;
+	}
+}
+
+
+@media screen and (min-width: 992px){
+
+	.FutContainer {
+		display: flex;
+		flex-direction: row;
+		font-family: 'Poppins', sans-serif;
+		background-color: darkslateblue;
+		height: 15vh;
+		bottom: 0px;
+	}
+
+	.UList {
+		flex-grow: 2;
+		text-decoration: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.ListItem {
+		text-decoration: none;
+		list-style-type: none;
+		background-color: #000056;
+		border-radius: 1em;
+		transition: 0.2s ease;
+		padding: 10px 10px 5px 10px;
+	}
+
+	.ListItem:hover {
+		background-color: #000080;
+	}
+
+
+	.LIA {
+		text-decoration: none;
+		color: black;
+	}
+
+	.ImgLogoRs {
+		max-width: 5vmin;
+	}
+
+	.ImgLogoLD {
+		max-width: 5vmin;
+	}
+
+}

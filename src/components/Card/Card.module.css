@@ -1,0 +1,234 @@
+@media screen and (min-width: 300px) {
+	.CardContainer {
+		background-color: #252525;  
+		border-radius: 1.9rem;
+		width: 90vw;
+		font-family: 'Quicksand', sans-serif;
+		margin: 2vh 0px;
+	}
+
+	.TopDiv {
+		display: flex;
+		align-content: space-around;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.ButtonClose {
+		font-family: cursive;
+		color: grey;
+		padding: 25px 30px;
+		transition: 0.4s;
+		text-align: center;
+		border: none;
+		border-radius: 5em;
+		background-color: #000049;
+		margin: 10px 0px 0px 0px ;
+	}
+
+	.ButtonClose:hover{
+		background-color: #1C538E66;
+		color: #252525;
+	}
+
+	.Link {
+		text-decoration:none; 
+		color: black;
+	}
+
+	.MoreInfo {
+		background-color:#000049;
+		border-radius: 2em;
+		transition: 0.4s ease;
+		padding: 16px 5vmin;
+		margin: 10px 0px 0px 0px;
+	}
+
+	.MoreInfo:hover{
+		background-color: #1C538E66;
+		color: #252525;
+	}
+
+	.ImgChar {
+		border-radius: 0.6em;
+		width: 70%;
+	}
+
+	.LinkH2:hover {
+		background-color: #1C538E66;
+		color: #252525;
+	}
+
+	.info {
+		background-color: #000049;
+		border-radius: 0.4em;
+		color: #E7DECC;
+	}
+}
+
+@media screen and (min-width: 550px) {
+
+	.CardContainer {
+		background-color: #252525;  
+		border-radius: 1.9rem;
+		margin: 10px;
+		padding: 0px 10px;
+		box-shadow: 4px 4px 8px black;
+		transition: 0.5s;
+		min-height: 645px;
+		max-width: 340px;
+		font-family: 'Quicksand', sans-serif;
+
+	}
+
+	.CardContainer:hover{
+		box-shadow: 9px 9px 10px black;
+	}
+
+	.TopDiv {
+		display: flex;
+		align-content: space-around;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.ButtonClose {
+		font-family: cursive;
+		color: grey;
+		padding: 16px 32px;
+		transition: 0.4s;
+		text-align: center;
+		border: none;
+		border-radius: 2em;
+		background-color: #000049;
+		margin: 10px 0px 0px 0px ;
+	}
+
+	.ButtonClose:hover{
+		background-color: #1C538E66;
+		color: #252525;
+	}
+
+	.Link {
+		text-decoration:none; 
+		color: black;
+	}
+
+	.MoreInfo {
+		background-color:#000049;
+		border-radius: 2em;
+		transition: 0.4s ease;
+		padding: 16px 32px;
+		margin: 10px 0px 0px 0px;
+	}
+
+	.MoreInfo:hover{
+		background-color: #1C538E66;
+		color: #252525;
+	}
+
+	.ImgChar {
+		border-radius: 0.6em;
+		margin: 15px;
+	}
+
+	.LinkH2:hover {
+		background-color: #1C538E66;
+		color: #252525;
+	}
+
+	.infoContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.info {
+		background-color: #000049;
+		border-radius: 0.4em;
+		color: #E7DECC;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+
+	.CardContainer {
+		background-color: #252525;  
+		border-radius: 1.9rem;
+		margin: 10px;
+		padding: 0px 10px;
+		box-shadow: 4px 4px 8px black;
+		transition: 0.5s;
+		min-height: 645px;
+		max-width: 340px;
+		font-family: 'Quicksand', sans-serif;
+
+	}
+
+	.CardContainer:hover{
+		box-shadow: 9px 9px 10px black;
+	}
+
+	.TopDiv {
+		display: flex;
+		align-content: space-around;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.ButtonClose {
+		font-family: cursive;
+		color: grey;
+		padding: 16px 32px;
+		transition: 0.4s;
+		text-align: center;
+		border: none;
+		border-radius: 2em;
+		background-color: #000049;
+		margin: 10px 0px 0px 0px ;
+	}
+
+	.ButtonClose:hover{
+		background-color: #1C538E66;
+		color: #252525;
+	}
+
+	.Link {
+		text-decoration:none; 
+		color: black;
+	}
+
+	.MoreInfo {
+		background-color:#000049;
+		border-radius: 2em;
+		transition: 0.4s ease;
+		padding: 16px 32px;
+		margin: 10px 0px 0px 0px;
+	}
+
+	.MoreInfo:hover{
+		background-color: #1C538E66;
+		color: #252525;
+	}
+
+	.ImgChar {
+		border-radius: 0.6em;
+		margin: 15px;
+	}
+
+	.LinkH2:hover {
+		background-color: #1C538E66;
+		color: #252525;
+	}
+
+	.infoContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.info {
+		background-color: #000049;
+		border-radius: 0.4em;
+		color: #E7DECC;
+	}
+}

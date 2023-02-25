@@ -1,0 +1,89 @@
+@media screen and (min-width: 300px) and (max-width: 850px) {
+	form {
+		flex-grow: 3;
+	}
+
+	.SearchSite {
+		width: 30vmin;
+		font-family: "Quicksand";
+		border-radius: 1em;
+		border: 1px solid slateblue; 
+		padding: 10px;
+		background-color: transparent;
+		transition: 0.4s ease;
+		margin: 10px;
+		font-size: 3vmin;
+	}
+
+	::placeholder {
+		color: black;
+	}
+
+	.SearchSite:hover {
+		background-color: slateblue;
+	}
+
+	.SearchSite:focus {
+		background-color: slateblue;
+		color: black;
+		width: 60%;
+	}
+
+	button {
+		border: none;
+		background-color: slateblue;
+		font-family: 'Quicksand', sans-serif;
+		margin: 0px 5px;
+		padding: 1vmin  2vmin;
+		border-radius: 1em;
+		transition: 0.4s ease;
+		font-size: 3vmin;
+	}
+
+	button:hover {
+		background-color: darkslateblue;
+	}
+
+}
+
+@media screen and (min-width: 850px){
+
+	.SearchSite {
+		width: 80px;
+		font-family: "Quicksand";
+		border-radius: 1em;
+		border: 1px solid slateblue; 
+		padding: 10px;
+		background-color: transparent;
+		transition: 0.6s ease;
+	}
+
+	::placeholder {
+		color: black;
+	}
+
+	.SearchSite:hover {
+		background-color: slateblue;
+	}
+
+	.SearchSite:focus {
+		background-color: slateblue;
+		color: black;
+		width: 15vw;
+	}
+
+	button {
+		border: none;
+		background-color: slateblue;
+		font-family: 'Quicksand', sans-serif;
+		margin: 0px 5px;
+		padding: 10px;
+		border-radius: 1em;
+		transition: 0.4s ease;
+		font-size: 16px
+	}
+
+	button:hover {
+		background-color: darkslateblue;
+	}
+}
