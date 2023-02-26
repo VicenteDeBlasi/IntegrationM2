@@ -2,9 +2,9 @@ import React, {useState, useEffect} from 'react';
 import style from './Form.module.css';
 import validate from './validation.js'
 
-export default function Form () {
+export default function Form ({ login }) {
 	
-	const [userData, setuserData] = useState({
+	const [userData, setUserData] = useState({
 		username: '',
 		password: '',
 	});
@@ -14,46 +14,57 @@ export default function Form () {
 		password: '',
 	});
 
-	useEffect(() => {
-		setErrors(validate(userData));
-	}, [userData]);
+	// useEffect(() => {
+	// 	setErrors(validate(userData));
+	// }, [userData]);
 
 	const handleChange = (event) => {
-		setuserData({
+		setUserData({
 			...userData,
 			[event.target.name]: event.target.value
 		})
+		setErrors(validate({
+			...userData,
+			[event.target.name]: event.target.value	
+		}))
 	};
 
 	const handleSubmit = (event) => {
 		event.preventDefault()
-		const errorsArray = Object.values(errors);
-		const errorsLength = errorsArray.length;
-
-		if (errorsLength === 0) {
-			window.alert('Datos completos');
-			setuserData({
-				username: '',
-				password: '',
-			});
-			setErrors({
-				username: '',
-				password: '',
-			})
-		}else{
-			window.alert('Revisa de nuevo');
-		}
-	}
+		login(userData);
+	};
 
 	return(
 		<div className={style.container} >
-			<form onSubmit={handleSubmit} >
-				<label className={style.FormLabel} >Username: </label>
-				<input  className={style.FormInput} type='text' onChange={handleChange} value={userData.username} name='username' placeholder='Correo electronico' />
-
-				<label className={style.FormLabel} >Contraseña: </label>
-				<input  className={style.FormInput} type='password' onChange={handleChange} value={userData.password} name="password" placeholder='Contraseña' />
-
+			<form className={style.loginForm} onSubmit={handleSubmit} >
+				<div className={style.divLaErr} >
+					<label className={style.FormLabel} >Username </label>
+					{errors.username && <p className={style.errorP} >{errors.username}</p>}
+				</div>
+				
+				<input  
+					className={style.FormInput} 
+					type='text' 
+					onChange={handleChange} 
+					value={userData.username} 
+					name='username' 
+					placeholder='Correo electronico' 
+				/>
+				
+				<div className={style.divLaErr} >
+					<label className={style.FormLabel} >Contraseña </label>
+					{errors.password && <p className={style.errorP} >{errors.password}</p>}
+				</div>
+				
+				<input  
+					className={style.FormInput} 
+					type='password' 
+					onChange={handleChange} 
+					value={userData.password} 
+					name="password" 
+					placeholder='Contraseña' 
+				/>
+				
 				<button className={style.subButton} type='submit' >Login</button>
 			</form>
 		</div>

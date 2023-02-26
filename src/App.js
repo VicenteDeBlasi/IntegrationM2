@@ -15,12 +15,12 @@ function App () {
   const [access, setAccess] = useState(false);
   const navigate = useNavigate();
   var username = 'vicentedb67@gmail.com';
-  var password = 'Cacona123.';
+  var password = 'Cacona123';
 
   function login(userData) {
     if (userData.password === password && userData.username === username) {
       setAccess(true);
-      navigate('/');
+      navigate('/home');
     }
   }
 
@@ -60,9 +60,9 @@ function App () {
   
   return (
     <div className='App' style={{ padding: '0px' }}>
-      {location.pathname === '/' ? <Form login={login}/> : <header style={{position:"sticky",top:"0px"}}> <Nav onSearch={onSearch} random={random} deleteAll={deleteAll} /></header>}
+      {location.pathname === '/' ? <div><Form login={login}/></div> : <header style={{position:"sticky",top:"0px"}}> <Nav onSearch={onSearch} random={random} deleteAll={deleteAll} /></header>}
       <Routes>
-        <Route path="/" element={<Cards characters={characters} onClose={onClose}/>} />
+        <Route path="/home" element={<Cards characters={characters} onClose={onClose}/>} />
         <Route path="/about" element={<About />} />
         <Route path="/detail/:detailId" element={<Detail />} />
       </Routes>

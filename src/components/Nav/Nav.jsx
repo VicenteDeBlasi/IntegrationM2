@@ -5,7 +5,7 @@ import styleNav from './Nav.module.css';
 
 export default function Nav(props) {
 	const { onSearch, random, deleteAll } = props;
-	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);
