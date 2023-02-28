@@ -21,6 +21,8 @@ function App () {
     if (userData.password === password && userData.username === username) {
       setAccess(true);
       navigate('/home');
+    }else{
+      window.alert('Los cuenta es inexistente')
     }
   }
 
@@ -60,7 +62,7 @@ function App () {
   
   return (
     <div className='App' style={{ padding: '0px' }}>
-      {location.pathname === '/' ? <div><Form login={login}/></div> : <header style={{position:"sticky",top:"0px"}}> <Nav onSearch={onSearch} random={random} deleteAll={deleteAll} /></header>}
+      {location.pathname === '/' ? <Form login={login}/> : <header style={{position:"sticky",top:"0px", zIndex:'2'}}> <Nav onSearch={onSearch} random={random} deleteAll={deleteAll} /></header>}
       <Routes>
         <Route path="/home" element={<Cards characters={characters} onClose={onClose}/>} />
         <Route path="/about" element={<About />} />

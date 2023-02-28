@@ -29,7 +29,7 @@ export default function Nav(props) {
 					<button className={styleNav.ListItemButton} onClick={random} >Personaje aleatorio</button>
 				</li>
 				<li className={styleNav.ListItemLink}>
-					<NavLink to="/" className={({isActive}) => isActive ? styleNav.active : styleNav.disable}>
+					<NavLink to="/home" className={({isActive}) => isActive ? styleNav.active : styleNav.disable}>
 						Home
 					</NavLink>
 					<NavLink to="/about" className={({isActive}) => isActive ? styleNav.active : styleNav.disable}>
@@ -38,6 +38,9 @@ export default function Nav(props) {
 					<a className={styleNav.ListItemContacto} href="#CONTACTO">
 						Contacto
 					</a>
+					<NavLink to='/' className={({isActive}) => isActive ? styleNav.active : styleNav.disable}>
+						Logout	
+					</NavLink>
 				</li>
 			</ul>
 			<div className={styleNav.SearchContainer} >

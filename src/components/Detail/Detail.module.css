@@ -1,6 +1,6 @@
-@media screen and (min-width: 300px) and (max-width: 841px){
+@media screen and (min-width: 200px) and (max-width: 841px){
 
-.Container {
+	.Container {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
@@ -11,6 +11,7 @@
 	.VolverContainer {
 		width: 45vw;
 		margin-left: 3.3vw;
+		margin-bottom: 2vh;
 		font-size: 3.5vmin;
 	}
 
@@ -20,13 +21,41 @@
 	}
 
 	.Volver {
-		background-color: darkslateblue;
-		border-radius: 1em;
-		transition: 0.4s ease;
+		padding: 0.8em 1.8em;
+		border: 2px solid slateblue;
+		border-radius: 0em 100em;
+		position: relative;
+		overflow: hidden;
+		background-color: transparent;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 16px;
+		transition: .3s;
+		z-index: 1;
+		font-family: inherit;
+		color: slateblue;
+	}
+
+	.Volver::before {
+		content: '';
+		width: 0;
+		height: 300%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+		background: slateblue;
+		transition: .5s ease;
+		display: block;
+		z-index: -1;
+	}
+
+	.Volver:hover::before {
+		width: 105%;
 	}
 
 	.Volver:hover {
-		background-color: slateblue;
+		color: #111;
 	}
 
 	.DetailsContainer {
@@ -54,7 +83,7 @@
 	.nameContainer {
 		font-family: 'Quicksand', sans-serif;
 		border-radius: 2em;
-		background-color: #000049;
+		background-color: rgba(0, 0, 29, 0.4);
 		width: 100vw;
 		margin: 2vh 0px;
 	}
@@ -63,7 +92,7 @@
 		font-family: 'Quicksand', sans-serif;
 		flex-grow: 1;
 		border-radius: 2em;
-		background-color: #000049;
+		background-color: rgba(0, 0, 29, 0.4);
 		width: 100vw;
 	}
 
@@ -80,8 +109,8 @@
 	}
 
 	.VolverContainer {
-		width: 15vw;
-		margin-left: 3.3vw;
+		display: flex;
+		justify-content: flex-start;
 	}
 
 	.VolverLink {
@@ -90,13 +119,42 @@
 	}
 
 	.Volver {
-		background-color: darkslateblue;
-		border-radius: 1em;
-		transition: 0.4s ease;
+		margin: 10px 0px 0px 10px;
+		padding: 0.8em 1.8em;
+		border: 2px solid slateblue;
+		border-radius: 0em 100em;
+		position: relative;
+		overflow: hidden;
+		background-color: transparent;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 16px;
+		transition: .3s;
+		z-index: 1;
+		font-family: inherit;
+		color: slateblue;
+	}
+
+	.Volver::before {
+		content: '';
+		width: 0;
+		height: 300%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+		background: slateblue;
+		transition: .5s ease;
+		display: block;
+		z-index: -1;
+	}
+
+	.Volver:hover::before {
+		width: 105%;
 	}
 
 	.Volver:hover {
-		background-color: slateblue;
+		color: #111;
 	}
 
 	.DetailsContainer {
@@ -119,7 +177,7 @@
 	.nameContainer {
 		font-family: 'Quicksand', sans-serif;
 		border-radius: 2em;
-		background-color: #000049;
+		background-color: rgba(0, 0, 29, 0.4);
 		width: 40vw;
 	}
 
@@ -127,7 +185,7 @@
 		font-family: 'Quicksand', sans-serif;
 		flex-grow: 1;
 		border-radius: 2em;
-		background-color: #000049;
+		background-color: rgba(0, 0, 29, 0.4);
 		width: 40vw;
 	}
 }

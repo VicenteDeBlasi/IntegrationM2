@@ -1,4 +1,4 @@
-@media screen and (min-width: 300px) and (max-width: 850px){
+@media screen and (min-width: 200px) and (max-width: 850px){
 	.container {
 		width: 100%;
 		font-size: 3vmin;
@@ -52,6 +52,22 @@
 	}
 
 	.ListItemContacto:hover {
+		background-color: darkslateblue;
+	}
+
+	.ListItemLogout {
+		border: none;
+		background-color: slateblue;
+		font-family: 'Quicksand', sans-serif;
+		border-radius: 1em;
+		transition: 0.4s ease;
+		list-style-type: none;
+		text-decoration: none;
+		color: black;
+		padding: 2vmin 0px;	
+	}
+
+	.ListItemLogout:hover {
 		background-color: darkslateblue;
 	}
 
@@ -192,6 +208,7 @@
 
 	.ListItemContacto:hover {
 		background-color: darkslateblue;
+		scale: 1.1;
 	}
 
 	button {
@@ -206,6 +223,7 @@
 
 	button:hover {
 		background-color: darkslateblue;
+		scale: 1.1;
 	}
 
 	.active {
@@ -220,6 +238,7 @@
 
 	.active:hover{
 		background-color: darkslateblue;
+		scale: 1.1;
 	}
 
 	.disable {
@@ -233,7 +252,8 @@
 	}
 
 	.disable:hover{
-		background-color: darkslateblue;	
+		background-color: darkslateblue;
+		scale: 1.1;	
 	}
 
 	.menuButton {

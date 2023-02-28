@@ -1,4 +1,4 @@
-@media screen and (min-width: 300px) and (max-width: 850px) {
+@media screen and (min-width: 200px) and (max-width: 850px) {
 	form {
 		flex-grow: 3;
 	}
@@ -12,7 +12,7 @@
 		background-color: transparent;
 		transition: 0.4s ease;
 		margin: 10px;
-		font-size: 3vmin;
+		font-size: 4vmin;
 	}
 
 	::placeholder {
@@ -37,7 +37,7 @@
 		padding: 1vmin  2vmin;
 		border-radius: 1em;
 		transition: 0.4s ease;
-		font-size: 3vmin;
+		font-size: 4vmin;
 	}
 
 	button:hover {
@@ -49,13 +49,14 @@
 @media screen and (min-width: 850px){
 
 	.SearchSite {
-		width: 80px;
+		width: 95px;
 		font-family: "Quicksand";
 		border-radius: 1em;
 		border: 1px solid slateblue; 
 		padding: 10px;
 		background-color: transparent;
 		transition: 0.6s ease;
+		font-size: 16px;
 	}
 
 	::placeholder {
@@ -80,7 +81,7 @@
 		padding: 10px;
 		border-radius: 1em;
 		transition: 0.4s ease;
-		font-size: 16px
+		font-size: 16px;
 	}
 
 	button:hover {

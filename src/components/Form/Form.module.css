@@ -1,6 +1,94 @@
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 200px) {
 	.container { 
 		padding: 10% 0px;
+		height: 100vh;
+		width: 100%;
+	}
+
+	.loginForm {
+		background-color: slateblue;
+		width: 250px;
+		height: 350px;
+		border-radius: 2em;
+		font-size: 3vmin;
+		color: lightgrey;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.divLaErr {
+		display: flex;
+		align-items: center;
+		font-size: 
+	}
+
+	.FormLabel {
+		background-color: darkslateblue;
+		padding: 2.5px;
+		border-radius: 1em;
+		margin: 0px 0px 5px 10px;
+		font-size: 20px;
+	}
+
+	.FormInput {
+		width: 180px;
+		font-family: "Quicksand";
+		border-radius: 1em;
+		border: 1px solid black; 
+		padding: 10px;
+		background-color: transparent;
+		transition: 0.4s ease;
+		margin: 10px;
+		font-size: 15px;
+	}
+
+	::placeholder {
+		color: black;
+	}
+
+	.FormInput:hover {
+		background-color: slateblue;
+	}
+
+	.FormInput:focus {
+		background-color: slateblue;
+		color: black;
+	}
+
+	.subButton {
+		background-color: darkslateblue;
+		border: 1px solid black;
+		font-size: 20px;
+		margin-left: 10px
+	}
+
+	.subButton:hover {
+		background-color: slateblue;
+	}
+
+
+	.errorP {
+		opacity: 0.6;
+		background-color: red;
+		border-radius: 1em;
+		color: white;
+		font-size: 15px;
+		margin: 0px 0px 0px 0px;
+		padding: 0px 5px 0px 5px;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	
+	.container { 
+		padding: 10% 0px;
+		height: 60vh;
 	}
 
 	.loginForm {

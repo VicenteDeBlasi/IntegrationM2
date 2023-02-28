@@ -1,4 +1,4 @@
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 200px) {
 
 	.FutContainer {
 		display: flex;
@@ -6,8 +6,7 @@
 		font-family: 'Poppins', sans-serif;
 		background-color: darkslateblue;
 		height: 15vh;
-		bottom: 0px;
-		width: 100vw;
+		width: 100%;
 	}
 
 	.UList {
@@ -60,7 +59,6 @@
 		font-family: 'Poppins', sans-serif;
 		background-color: darkslateblue;
 		height: 15vh;
-		bottom: 0px;
 		width: 100%;
 	}
 

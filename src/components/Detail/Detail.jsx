@@ -25,8 +25,8 @@ export default function Detail () {
 	return(
 		<div className={styles.Container} >
       <div className={styles.VolverContainer} >  
-        <Link className={styles.VolverLink} to="/">
-          <h1 className={styles.Volver} >VOLVER</h1>
+        <Link className={styles.VolverLink} to="/home">
+          <button className={styles.Volver} >VOLVER</button>
         </Link> 
       </div>
       <div className={styles.DetailsContainer} >

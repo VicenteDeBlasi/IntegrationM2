@@ -1,4 +1,4 @@
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 200px) {
 	.CardContainer {
 		background-color: #252525;  
 		border-radius: 1.9rem;
@@ -33,7 +33,7 @@
 
 	.Link {
 		text-decoration:none; 
-		color: black;
+		color: #E7DECC;
 	}
 
 	.MoreInfo {
@@ -111,7 +111,7 @@
 
 	.Link {
 		text-decoration:none; 
-		color: black;
+		color: #E7DECC;
 	}
 
 	.MoreInfo {
@@ -184,7 +184,7 @@
 		text-align: center;
 		border: none;
 		border-radius: 2em;
-		background-color: #000049;
+		background-color: rgba(0, 0, 29, 0.4);
 		margin: 10px 0px 0px 0px ;
 	}
 
@@ -195,13 +195,13 @@
 
 	.Link {
 		text-decoration:none; 
-		color: black;
+		color: #E7DECC;
 	}
 
 	.MoreInfo {
-		background-color:#000049;
+		background-color: rgba(0, 0, 29, 0.4);
 		border-radius: 2em;
-		transition: 0.4s ease;
+		transition: 0.3s ease;
 		padding: 16px 32px;
 		margin: 10px 0px 0px 0px;
 	}
@@ -227,7 +227,7 @@
 	}
 
 	.info {
-		background-color: #000049;
+		background-color: rgba(0, 0, 29, 0.4);
 		border-radius: 0.4em;
 		color: #E7DECC;
 	}

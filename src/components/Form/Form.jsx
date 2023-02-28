@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import style from './Form.module.css';
 import validate from './validation.js'
 
+//Crear funcion logout en App.js. 
+
 export default function Form ({ login }) {
 	
 	const [userData, setUserData] = useState({
@@ -13,10 +15,6 @@ export default function Form ({ login }) {
 		username: '',
 		password: '',
 	});
-
-	// useEffect(() => {
-	// 	setErrors(validate(userData));
-	// }, [userData]);
 
 	const handleChange = (event) => {
 		setUserData({
